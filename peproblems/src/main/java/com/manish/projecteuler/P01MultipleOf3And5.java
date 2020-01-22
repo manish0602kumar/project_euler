@@ -5,6 +5,8 @@
  */
 package com.manish.projecteuler;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author manish If we list all the natural numbers below 10 that are multiples
@@ -19,14 +21,17 @@ public class P01MultipleOf3And5 {
     public static void main(String[] args) {
         SumOf3and5Multiples(3, 5, 1000);
     }
+    static final Logger log = Logger.getLogger(P01MultipleOf3And5.class.getName());
 
     /**
      * Calculate the sum of multiple of 3 and 5
+     *
      * @param firstMultiple
      * @param secondMultiple
      * @param range
+     * @return
      */
-    public static void SumOf3and5Multiples(int firstMultiple, int secondMultiple, int range ) {
+    public static int SumOf3and5Multiples(int firstMultiple, int secondMultiple, int range) {
         //starting position to be 3 as lowest multiple is 3
         int pos = 3, sum = 0;
         while (pos < range) {
@@ -35,7 +40,9 @@ public class P01MultipleOf3And5 {
             }
             pos++;
         }
+        log.info("Sum of multiples is  " + sum);
         System.out.println("sum of all the multiples of 3 or 5 below 1000 is: " + sum);
+        return sum;
     }
 
 }
