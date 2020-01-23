@@ -9,22 +9,25 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author manish If we list all the natural numbers below 10 that are multiples
+ * @author manish 
+ * 
+ * If we list all the natural numbers below 10 that are multiples
  * of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the
  * sum of all the multiples of 3 or 5 below 1000.
  */
 public class P01MultipleOf3And5 {
-
+    
+    static final Logger log = Logger.getLogger(P01MultipleOf3And5.class.getName());
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         SumOf3and5Multiples(3, 5, 1000);
     }
-    static final Logger log = Logger.getLogger(P01MultipleOf3And5.class.getName());
 
     /**
-     * Calculate the sum of multiple of 3 and 5
+     * This Function calculates the sum of multiple of 3 and 5
      *
      * @param firstMultiple
      * @param secondMultiple
@@ -41,7 +44,7 @@ public class P01MultipleOf3And5 {
             pos++;
         }
         log.info("Sum of multiples is  " + sum);
-        System.out.println("sum of all the multiples of 3 or 5 below 1000 is: " + sum);
+        System.out.println("sum of all the multiples of 3 or 5 below "+ range +" is: " + sum);
         return sum;
     }
 

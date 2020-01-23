@@ -5,21 +5,20 @@
  */
 package com.manish.projecteuler.test;
 
-import com.manish.projecteuler.P01MultipleOf3And5;
+import com.manish.projecteuler.P02EvenFibonacciNumbers;
 import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * This class contains test case for P01MultipleOf3And5 class
- *
+ * This class contains test case for P02EvenFibonacciNumbers class
+ * 
  * @author manish
  */
-public class P01MultipleOf3And5Test {
+public class P02EvenFibonacciNumbersTest {
 
     @Test
     public void testSumOf3and5Multiples() {
-        Assert.assertEquals(233168, P01MultipleOf3And5.SumOf3and5Multiples(3, 5, 1000));
-        System.out.println("Ok Tested for P01MultipleOf3And5 class");
-    }
-
+        Assert.assertEquals(4613732, P02EvenFibonacciNumbers.SumEvenFibonacci(4000000));
+        System.out.println("Ok Tested for P02EvenFibonacciNumbers class");
+    }    
 }
