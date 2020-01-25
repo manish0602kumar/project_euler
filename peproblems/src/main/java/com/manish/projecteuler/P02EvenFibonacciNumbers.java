@@ -25,20 +25,20 @@ public class P02EvenFibonacciNumbers {
      * @param args
      */
     public static void main(String[] args) {
-        SumEvenFibonacci(4000000);
+        SumOfEvenFibonacci(4000000);
         
     }
      
     /**
      * This Function calculates the sum of Even Fibonacci Series
      * 
-     * @param range
+     * @param number
      * @return
      */
-    public static int SumEvenFibonacci (int range) {
+    public static int SumOfEvenFibonacci (int number) {
         //starting from 3 as we are initalizing sum = 2 which is first even fibonnaci series number
         int firstTerm= 3, secondTerm=5,  thirdTerm =0, sum=2;
-        while (thirdTerm <= range) { 
+        while (thirdTerm <= number) { 
            thirdTerm = firstTerm + secondTerm;
            if ( thirdTerm % 2 == 0) {
                sum = sum + thirdTerm;
@@ -47,7 +47,7 @@ public class P02EvenFibonacciNumbers {
            secondTerm = thirdTerm;            
         }
         log.info("Sum of even febonacci series is "+ sum);
-        System.out.println("Sum of even febonacci series less than "+ range +" is: "+ sum);
+        System.out.println("Sum of even febonacci series less than "+ number +" is: "+ sum);
         return sum;
     }
     

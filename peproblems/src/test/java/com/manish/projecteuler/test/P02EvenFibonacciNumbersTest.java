@@ -18,7 +18,7 @@ public class P02EvenFibonacciNumbersTest {
 
     @Test
     public void testSumOf3and5Multiples() {
-        Assert.assertEquals(4613732, P02EvenFibonacciNumbers.SumEvenFibonacci(4000000));
-        System.out.println("Ok Tested for P02EvenFibonacciNumbers class");
+        Assert.assertEquals(4613732, P02EvenFibonacciNumbers.SumOfEvenFibonacci(4000000));
+        System.out.println("Ok Tested for "+ P02EvenFibonacciNumbers.class.getName());
     }    
 }

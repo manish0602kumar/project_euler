@@ -31,20 +31,20 @@ public class P01MultipleOf3And5 {
      *
      * @param firstMultiple
      * @param secondMultiple
-     * @param range
+     * @param number
      * @return
      */
-    public static int SumOf3and5Multiples(int firstMultiple, int secondMultiple, int range) {
+    public static int SumOf3and5Multiples(int firstMultiple, int secondMultiple, int number) {
         //starting position to be 3 as lowest multiple is 3
         int pos = 3, sum = 0;
-        while (pos < range) {
+        while (pos < number) {
             if (pos % firstMultiple == 0 || pos % secondMultiple == 0) {
                 sum = sum + pos;
             }
             pos++;
         }
         log.info("Sum of multiples is  " + sum);
-        System.out.println("sum of all the multiples of 3 or 5 below "+ range +" is: " + sum);
+        System.out.println("sum of all the multiples of 3 or 5 below "+ number +" is: " + sum);
         return sum;
     }
 

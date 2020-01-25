@@ -19,7 +19,7 @@ public class P01MultipleOf3And5Test {
     @Test
     public void testSumOf3and5Multiples() {
         Assert.assertEquals(233168, P01MultipleOf3And5.SumOf3and5Multiples(3, 5, 1000));
-        System.out.println("Ok Tested for P01MultipleOf3And5 class");
+        System.out.println("Ok Tested for " + P01MultipleOf3And5.class.getName());
     }
 
 }
